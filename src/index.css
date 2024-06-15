@@ -7,7 +7,7 @@
 }
 
 .padding-y {
-  @apply py-3 md:py-5 lg:py-7 xxl:py-9;
+  @apply py-2 lg:py-2 xxl:py-4;
 }
 
 .width {

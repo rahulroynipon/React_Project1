@@ -25,7 +25,7 @@ export function NavBar() {
   }, []);
 
   return (
-    <main className="pt-2 sticky top-0 flex justify-between items-center width padding-x padding-y">
+    <main className="bg-white sticky top-0 flex justify-between items-center width padding-x padding-y">
       {/* logo start */}
       <h1>
         <img className="min-h-12 h-10 max-h-16" src={logo} alt="Company Logo" />
