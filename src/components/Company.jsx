@@ -12,7 +12,7 @@ export default function Company() {
 
   return (
     <main className="mt-16  padding-x">
-      <div className=" grayscale flex items-center justify-center gap-5 flex-wrap">
+      <div className="grayscale flex items-center justify-center gap-5 flex-wrap">
         {companyIMG.map((item) => (
           <img key={item.id} src={item.img} alt={item.alt} className="mr-10" />
         ))}

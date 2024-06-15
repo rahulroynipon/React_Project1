@@ -1,5 +1,10 @@
 import { NavBar } from "../global/NavBar";
-import { Company, HeroSection, Services } from "../components/Components";
+import {
+  Company,
+  Happend,
+  HeroSection,
+  Services,
+} from "../components/Components";
 
 export default function Home() {
   return (
@@ -8,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <Company />
       <Services />
+      <Happend />
     </>
   );
 }
