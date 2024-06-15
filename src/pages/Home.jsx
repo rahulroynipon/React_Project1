@@ -1,5 +1,6 @@
 import { NavBar } from "../global/NavBar";
 import {
+  CaseStudies,
   Company,
   Happend,
   HeroSection,
@@ -14,6 +15,7 @@ export default function Home() {
       <Company />
       <Services />
       <Happend />
+      <CaseStudies />
     </>
   );
 }
