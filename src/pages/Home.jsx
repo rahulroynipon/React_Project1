@@ -5,6 +5,7 @@ import {
   Happend,
   HeroSection,
   Services,
+  TeamSection,
   WrokingProcess,
 } from "../components/Components";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <Happend />
       <CaseStudies />
       <WrokingProcess />
+      <TeamSection />
     </>
   );
 }
