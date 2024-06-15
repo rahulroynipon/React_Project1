@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "img": "/company1.svg",
+    "alt": "amazon"
+  },
+  {
+    "id": 2,
+    "img": "/company2.svg",
+    "alt": "dribbble"
+  },
+  {
+    "id": 3,
+    "img": "/company3.svg",
+    "alt": "hubspot"
+  },
+  {
+    "id": 4,
+    "img": "/company4.svg",
+    "alt": "notion"
+  },
+  {
+    "id": 5,
+    "img": "/company5.svg",
+    "alt": "Netflix"
+  },
+  {
+    "id": 6,
+    "img": "/company6.svg",
+    "alt": "zoom"
+  }
+]

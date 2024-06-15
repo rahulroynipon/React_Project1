@@ -32,6 +32,16 @@ export default {
       },
       fontFamily: {
         custom: ["Cascadia Mono", "monospace"], // "monospace" should be a string
+        "space-grotesk": ["Space Grotesk", "sans-serif"],
+      },
+      keyframes: {
+        "scroll-marquee": {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
+      animation: {
+        marquee: "scroll-marquee 20s linear infinite",
       },
     },
   },

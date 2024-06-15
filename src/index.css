@@ -1,6 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.space-grotesk-unique {
+  font-family: "Space Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
 .padding-x {
   @apply px-5 md:px-7 lg:px-9 xxl:px-12;
@@ -16,4 +25,24 @@
 
 .trans {
   @apply transition-all duration-500;
+}
+
+.marquee-container {
+  width: 100%; /* Adjust width as needed */
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 10px; /* Adjust gap between items */
+  animation: scroll-marquee 40s linear infinite;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

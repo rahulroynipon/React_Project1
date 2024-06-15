@@ -37,7 +37,7 @@ export function NavBar() {
         ref={navItem}
         className={`${
           navOpen ? "left-0" : "-left-[300px] md:-left-[400px]"
-        } trans flex flex-col absolute top-0 bottom-0 h-screen bg-pBlack text-pWhite px-14 md:px-28
+        } z-40 trans flex flex-col absolute top-0 bottom-0 h-screen bg-gray-900 text-pWhite px-14 md:px-28
           lg:h-full lg:flex-row lg:static lg:px-0 lg:bg-white lg:text-black justify-center items-center gap-10`}
       >
         {navDetails.map((item) => (
