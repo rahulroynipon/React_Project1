@@ -2,6 +2,7 @@ import { NavBar } from "../global/NavBar";
 import {
   CaseStudies,
   Company,
+  ContactUS,
   Happend,
   HeroSection,
   Services,
@@ -20,6 +21,7 @@ export default function Home() {
       <CaseStudies />
       <WrokingProcess />
       <TeamSection />
+      <ContactUS />
     </>
   );
 }
