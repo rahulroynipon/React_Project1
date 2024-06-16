@@ -1,5 +1,5 @@
 import HeaderTitle from "../reuseables/HeaderTitle";
-import arrow from "./../assets/icon/rightupwhiteblack.png";
+import arrow from "./../assets/icon/rightuplimeblack.png";
 import cn from "../../lib/cn";
 
 export default function CaseStudies() {

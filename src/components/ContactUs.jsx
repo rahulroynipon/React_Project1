@@ -19,6 +19,7 @@ export default function ContactUS() {
                 type="radio"
                 name="gender"
                 id="gender"
+                checked
               />
               <label htmlFor="gender">Say Hi</label>
             </div>
