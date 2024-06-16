@@ -4,7 +4,7 @@ import cn from "../../lib/cn";
 
 export default function CaseStudies() {
   return (
-    <main className="width mt-20 padding-x padding-y">
+    <main id="usecases" className="width mt-20 padding-x padding-y">
       <HeaderTitle
         title={"Case Studies"}
         content={

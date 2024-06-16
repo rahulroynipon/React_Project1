@@ -24,6 +24,18 @@ export default function Footer() {
 export function FooterHeader() {
   const social = [linkden, facebook, twitter];
 
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    const offset = 100; // Adjust this value to control the offset from the top
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <header className="flex flex-col justify-center items-center md:flex-row md:justify-between flex-wrap gap-7">
       <section>
@@ -37,7 +49,9 @@ export function FooterHeader() {
               hidden: index === navDetails.length - 1,
             })}
           >
-            <a href={item?.link}>{item?.context}</a>
+            <button onClick={() => handleScroll(item?.link)}>
+              {item.context}
+            </button>
           </li>
         ))}
       </ul>

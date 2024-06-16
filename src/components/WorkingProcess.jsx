@@ -18,7 +18,7 @@ export default function WorkingProcess() {
   };
 
   return (
-    <main className="mt-16 width padding-x padding-y">
+    <main id="Working" className="mt-16 width padding-x padding-y">
       <HeaderTitle
         title={"Our Working Process"}
         content={"Step-by-Step Guide to Achieving Your Business Goals"}

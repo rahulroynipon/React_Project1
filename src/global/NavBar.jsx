@@ -26,6 +26,18 @@ export default function NavBar() {
     return () => window.removeEventListener("click", handleNav);
   }, []);
 
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    const offset = 100; // Adjust this value to control the offset from the top
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <main className=" z-30 bg-white sticky top-0 flex justify-between items-center width padding-x padding-y">
       {/* logo start */}
@@ -53,7 +65,9 @@ export default function NavBar() {
                 item?.id === 6,
             })}
           >
-            <a href={item.link}>{item.context}</a>
+            <button onClick={() => handleScroll(item?.link)}>
+              {item.context}
+            </button>
           </li>
         ))}
       </ul>

@@ -1,28 +1,28 @@
 [
   {
     "id": 1,
-    "context": "About us",
-    "link": "#"
+    "context": "Working Process",
+    "link": "Working"
   },
   {
     "id": 2,
     "context": "Services",
-    "link": "#"
+    "link": "services"
   },
   {
     "id": 3,
     "context": "Use Cases",
-    "link": "#"
+    "link": "usecases"
   },
   {
     "id": 4,
-    "context": "Pricing",
-    "link": "#"
+    "context": "Team",
+    "link": "team"
   },
   {
     "id": 5,
-    "context": "Blog",
-    "link": "#"
+    "context": "Contact",
+    "link": "contact"
   },
   {
     "id": 6,

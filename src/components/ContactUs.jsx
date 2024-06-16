@@ -4,7 +4,7 @@ import Button from "../reuseables/Button";
 
 export default function ContactUS() {
   return (
-    <main className="mt-16 width padding-x padding-y">
+    <main id="contact" className="mt-16 width padding-x padding-y">
       <HeaderTitle
         title={"Contact Us"}
         content={"Connect with Us: Let's Discuss Your Digital Marketing Needs"}

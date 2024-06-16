@@ -13,7 +13,7 @@ import HeaderTitle from "../reuseables/HeaderTitle.jsx";
 
 export default function Services() {
   return (
-    <section className="width padding-x padding-y mt-16">
+    <section id="services" className="width padding-x padding-y mt-16">
       <HeaderTitle
         title={"Services"}
         content={

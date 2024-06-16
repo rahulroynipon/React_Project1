@@ -8,7 +8,10 @@ import member3 from "./../assets/img/team3.png";
 
 export default function TeamSection() {
   return (
-    <main className="width padding-x padding-y mt-16 flex flex-col gap-7">
+    <main
+      id="team"
+      className="width padding-x padding-y mt-16 flex flex-col gap-7"
+    >
       <HeaderTitle
         title={"Team"}
         content={
