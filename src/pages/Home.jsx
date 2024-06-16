@@ -7,6 +7,7 @@ import {
   HeroSection,
   Services,
   TeamSection,
+  Testimonials,
   WrokingProcess,
 } from "../components/Components";
 
@@ -21,6 +22,7 @@ export default function Home() {
       <CaseStudies />
       <WrokingProcess />
       <TeamSection />
+      <Testimonials />
       <ContactUS />
       <Footer />
     </>

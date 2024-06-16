@@ -47,3 +47,18 @@
 .custom-radio:hover {
   @apply border-pBlack;
 }
+
+.testimonial::after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 30px;
+  background-color: #191a23;
+  border-bottom: 1px solid #b9ff66;
+  border-left: 1px solid #b9ff66;
+  rotate: 320deg;
+  left: 25px;
+  bottom: -13px;
+  z-index: -10;
+}

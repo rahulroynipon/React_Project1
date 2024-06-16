@@ -6,6 +6,7 @@ import CaseStudies from "./CaseStudies";
 import WrokingProcess from "./WorkingProcess";
 import TeamSection from "./TeamSection";
 import ContactUS from "./ContactUs";
+import Testimonials from "./Testimonials";
 
 export {
   HeroSection,
@@ -16,4 +17,5 @@ export {
   WrokingProcess,
   TeamSection,
   ContactUS,
+  Testimonials,
 };
