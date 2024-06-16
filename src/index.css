@@ -20,7 +20,7 @@
 }
 
 .width {
-  @apply max-w-full lg:max-w-[1350px] xxl:max-w-[1600px] mx-auto;
+  @apply max-w-full lg:max-w-[1350px] xxl:max-w-[1750px] mx-auto;
 }
 
 .trans {
