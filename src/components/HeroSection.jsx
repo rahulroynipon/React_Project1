@@ -24,14 +24,3 @@ export default function HeroSection() {
     </main>
   );
 }
-{
-  /* <main className=" grid md:grid-cols-12 md:grid-rows-6 gap-10">
-
-
-
-
-<section className=" order-3  md:col-span-4 md:row-span-4">
-  
-</section>
-</main> */
-}
