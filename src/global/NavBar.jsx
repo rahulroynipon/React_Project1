@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import logo from "./../assets/logo1.png";
 import { CiMenuBurger } from "react-icons/ci";
+import cn from "../../lib/cn";
 
 export function NavBar() {
   const [navOpen, setNavOpen] = useState(false);
@@ -35,19 +36,21 @@ export function NavBar() {
       {/* nav link start */}
       <ul
         ref={navItem}
-        className={`${
-          navOpen ? "left-0" : "-left-[300px] md:-left-[400px]"
-        } z-40 trans flex flex-col absolute top-0 bottom-0 h-screen bg-pBlack text-pWhite px-14 md:px-28
-          lg:h-full lg:flex-row lg:static lg:px-0 lg:bg-white lg:text-black justify-center items-center gap-10`}
+        className={cn(
+          "z-40 trans flex flex-col absolute top-0 bottom-0 h-screen bg-pBlack text-pWhite px-14 md:px-28 lg:h-full lg:flex-row lg:static lg:px-0 lg:bg-white lg:text-black justify-center items-center gap-10",
+          {
+            "left-0": navOpen,
+            "-left-[300px] md:-left-[400px]": !navOpen,
+          }
+        )}
       >
         {navDetails.map((item) => (
           <li
             key={item.id}
-            className={`${
-              item.id === 6
-                ? "border px-3 py-2 rounded-lg border-pWhite lg:border-pBlack"
-                : ""
-            } cursor-pointer`}
+            className={cn("cursor-pointer", {
+              "border px-3 py-2 rounded-lg border-pWhite lg:border-pBlack":
+                item?.id === 6,
+            })}
           >
             <a href={item.link}>{item.context}</a>
           </li>
