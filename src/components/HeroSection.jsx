@@ -9,7 +9,7 @@ export default function HeroSection() {
           Navigating the digital landscape for success
         </h1>
       </section>
-      <section className="lg:col-span-8 md:col-span-7 md:row-span-6 flex justify-center items-center">
+      <section className="lg:col-span-8 md:col-span-7 md:row-span-6 flex items-center justify-center md:justify-end ">
         <img src={headerIMG} alt="header" />
       </section>
       <section className="lg:col-span-4 md:col-span-5 md:row-span-3 flex flex-col gap-10">

@@ -15,8 +15,8 @@ export default function Happend() {
           </p>
           <Button btnText="Get your free proposal" clName={"md:self-start"} />
         </div>
-        <div className="w-full hidden md:flex items-center justify-center">
-          <img className=" absolute z-20" src={IMG} alt="proposal" />
+        <div className="w-full hidden md:flex items-center justify-end h-44 ">
+          <img src={IMG} alt="proposal" />
         </div>
       </section>
     </main>
