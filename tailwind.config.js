@@ -29,6 +29,7 @@ export default {
         primary: "#B9FF66",
         pBlack: "#191A23",
         pWhite: "#F3F3F3",
+        gray: "#292A32",
       },
       fontFamily: {
         custom: ["Cascadia Mono", "monospace"], // "monospace" should be a string
