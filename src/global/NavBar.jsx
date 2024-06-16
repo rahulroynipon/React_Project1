@@ -2,8 +2,9 @@ import { useEffect, useRef, useState } from "react";
 import logo from "./../assets/logo1.png";
 import { CiMenuBurger } from "react-icons/ci";
 import cn from "../../lib/cn";
+import navDetails from "./../../data/navData.json";
 
-export function NavBar() {
+export default function NavBar() {
   const [navOpen, setNavOpen] = useState(false);
   const toggler = useRef(null);
   const navItem = useRef(null);
@@ -70,36 +71,3 @@ export function NavBar() {
     </main>
   );
 }
-
-export const navDetails = [
-  {
-    id: 1,
-    context: "About us",
-    link: "#",
-  },
-  {
-    id: 2,
-    context: "Services",
-    link: "#",
-  },
-  {
-    id: 3,
-    context: "Use Cases",
-    link: "#",
-  },
-  {
-    id: 4,
-    context: "Pricing",
-    link: "#",
-  },
-  {
-    id: 5,
-    context: "Blog",
-    link: "#",
-  },
-  {
-    id: 6,
-    context: "Request a quote",
-    link: "#",
-  },
-];

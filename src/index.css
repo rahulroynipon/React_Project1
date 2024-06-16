@@ -32,18 +32,18 @@
 }
 
 .custom-radio {
-  @apply appearance-none h-5 w-5 border border-gray-400 rounded-full relative cursor-pointer;
+  @apply appearance-none h-5 w-5 border border-pBlack rounded-full relative cursor-pointer;
 }
 
 .custom-radio:checked {
-  @apply border-primary;
+  @apply border-pBlack;
 }
 
 .custom-radio:checked::before {
   content: "";
-  @apply block w-3 h-3 bg-primary border-primary rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+  @apply block w-3 h-3 bg-primary border-pBlack rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
 }
 
 .custom-radio:hover {
-  @apply border-primary;
+  @apply border-pBlack;
 }

@@ -1,4 +1,4 @@
-import { NavBar } from "../global/NavBar";
+import { NavBar, Footer } from "../global/GlobalExport";
 import {
   CaseStudies,
   Company,
@@ -22,6 +22,7 @@ export default function Home() {
       <WrokingProcess />
       <TeamSection />
       <ContactUS />
+      <Footer />
     </>
   );
 }
