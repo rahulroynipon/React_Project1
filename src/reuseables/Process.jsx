@@ -1,6 +1,7 @@
 import plus from "./../assets/icon/plus.png";
 import minus from "./../assets/icon/minus.png";
 import cn from "./../../lib/cn";
+import { useRef, useEffect, useState } from "react";
 
 export default function Process({
   isOpen,
@@ -9,12 +10,23 @@ export default function Process({
   title,
   content,
 }) {
+  const contentRef = useRef(null);
+  const [maxHeight, setMaxHeight] = useState("0px");
+
+  useEffect(() => {
+    if (isOpen) {
+      setMaxHeight(`${contentRef.current.scrollHeight}px`);
+    } else {
+      setMaxHeight("0px");
+    }
+  }, [isOpen]);
+
   return (
     <section
       className={cn(
-        "border border-b-4 rounded-3xl p-5 md:p-8 border-pBlack trans flex flex-col gap-7",
+        "border border-b-4 rounded-3xl p-5 md:p-8 border-pBlack trans flex-col  gap-3",
         {
-          "bg-primary": isOpen,
+          "bg-primary flex ": isOpen,
           "bg-pWhite": !isOpen,
         }
       )}
@@ -37,12 +49,18 @@ export default function Process({
       </main>
 
       <div
-        className={cn("h-[.99px] bg-pBlack", {
-          hidden: !isOpen,
-        })}
-      ></div>
+        ref={contentRef}
+        className={cn("trans overflow-hidden")}
+        style={{
+          maxHeight: maxHeight,
+        }}
+      >
+        <div className="p-5">
+          <div className="bg-pBlack h-[0.99px]"></div>
 
-      <div className={`${!isOpen && "hidden"}`}>{content}</div>
+          <p className="mt-[1.9rem]">{content}</p>
+        </div>
+      </div>
     </section>
   );
 }
