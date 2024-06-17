@@ -2,6 +2,8 @@
 
 Welcome to our Digital Marketing Services webpage! This site is your gateway to exploring our vast range of services, impressive success stories, detailed work process, talented team, client testimonials, and convenient contact options. Designed with a vibrant mix of **green**, **black**, and **white**, our site offers a modern and appealing visual experience.
 
+🚀 **[Check out our live site!](https://react-project1-eosin.vercel.app/)** 🚀
+
 ---
 
 ## 📑 Sections
@@ -45,9 +47,11 @@ Encouraging visitors to get in touch for a free proposal:
 
 Read about our clients' success stories:
 
-- **Local Restaurant**: Our PPC campaign boosted website traffic by **50%** and increased sales by **35%**.
-- **B2B Software Company**: Our SEO strategy achieved first-page rankings, a **40%** rise in organic traffic, and a **30%** sales increase.
-- **National Retail Chain**: Our social media campaign grew followers by **80%** and raised online sales by **25%**.
+| Client | Success Story |
+|--------|----------------|
+| **Local Restaurant** | Our PPC campaign boosted website traffic by **50%** and increased sales by **35%**. |
+| **B2B Software Company** | Our SEO strategy achieved first-page rankings, a **40%** rise in organic traffic, and a **30%** sales increase. |
+| **National Retail Chain** | Our social media campaign grew followers by **80%** and raised online sales by **25%**. |
 
 Each case study includes a "Learn more" link for detailed insights.
 
@@ -78,14 +82,12 @@ Each step is expandable for more details.
 
 Meet our experts:
 
-- **John Smith** - CEO and Founder
-  - 10+ years in digital marketing, SEO, PPC, content strategy.
-- **Jane Doe** - Director of Operations
-  - 7+ years in project management and team leadership.
-- **Michael Brown** - Senior SEO Specialist
-  - 5+ years in SEO and content creation.
-- **Emily Johnson** - PPC Manager
-  - 3+ years in paid search advertising.
+| Name | Role | Experience |
+|------|------|------------|
+| **John Smith** | CEO and Founder | 10+ years in digital marketing, SEO, PPC, content strategy. |
+| **Jane Doe** | Director of Operations | 7+ years in project management and team leadership. |
+| **Michael Brown** | Senior SEO Specialist | 5+ years in SEO and content creation. |
+| **Emily Johnson** | PPC Manager | 3+ years in paid search advertising. |
 
 Each card includes a LinkedIn icon.
 
