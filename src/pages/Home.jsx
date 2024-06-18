@@ -11,20 +11,23 @@ import {
   WrokingProcess,
 } from "../components/Components";
 
+import { Reval } from "./../animation/AnimationExport";
+
 export default function Home() {
   return (
     <>
       <NavBar />
-      <HeroSection />
-      <Company />
-      <Services />
-      <Happend />
-      <CaseStudies />
-      <WrokingProcess />
-      <TeamSection />
-      <Testimonials />
-      <ContactUS />
-      <Footer />
+
+      <Reval children={<HeroSection />} />
+      <Reval children={<Company />} />
+
+      <Reval children={<CaseStudies />} />
+      <Reval children={<WrokingProcess />} />
+      <Reval children={<TeamSection />} />
+
+      <Reval children={<Testimonials />} />
+      <Reval children={<ContactUS />} />
+      <Reval children={<Footer />} />
     </>
   );
 }

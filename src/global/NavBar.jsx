@@ -3,6 +3,8 @@ import logo from "./../assets/logo1.png";
 import { CiMenuBurger } from "react-icons/ci";
 import cn from "../../lib/cn";
 import navDetails from "./../../data/navData.json";
+import { topAnimate } from "../animation/AnimationExport";
+import { motion } from "framer-motion";
 
 export default function NavBar() {
   const [navOpen, setNavOpen] = useState(false);
@@ -39,7 +41,12 @@ export default function NavBar() {
   };
 
   return (
-    <main className=" z-30 bg-white sticky top-0 flex justify-between items-center width padding-x padding-y">
+    <motion.main
+      variants={topAnimate}
+      initial="initial"
+      animate="animate"
+      className=" z-30 bg-white sticky top-0 flex justify-between items-center width padding-x padding-y"
+    >
       {/* logo start */}
       <h1>
         <img className="min-h-12 h-10 max-h-16" src={logo} alt="Company Logo" />
@@ -82,6 +89,6 @@ export default function NavBar() {
         <CiMenuBurger size={30} />
       </button>
       {/* menu toggler button end */}
-    </main>
+    </motion.main>
   );
 }
